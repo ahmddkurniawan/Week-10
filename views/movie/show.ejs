@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detail Film: <%= movie.title %></title>
+</head>
+<body>
+    <h1>Detail Film: <%= movie.title %></h1>
+    <ul>
+        <li><strong>Judul:</strong> <%= movie.title %></li>
+        <li><strong>Genre:</strong> <%= movie.genres %></li>
+        <li><strong>Tahun Rilis:</strong> <%= movie.year %></li>
+        <li><strong>Foto:</strong> <img src="/uploads/<%= movie.photo %>" alt="<%= movie.title %>" width="200"></li>
+    </ul>
+</body>
+</html>

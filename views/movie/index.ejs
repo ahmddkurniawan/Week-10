@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Film</title>
+</head>
+<body>
+    <h1>Daftar Film</h1>
+    <ul>
+        <% movies.forEach(function(movie) { %>
+            <li>
+                <a href="/movies/<%= movie._id %>"><%= movie.title %></a>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
